@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 :root {
     --navy: #263d55;
+    --navy-dark: #1f3650;
     --slate: #6f8298;
     --soft-blue: #dce7ef;
     --ivory: #f8f5ef;
@@ -33,8 +34,8 @@ body {
 
     background:
         linear-gradient(
-            rgba(248, 245, 239, 0.08),
-            rgba(38, 61, 85, 0.20)
+            rgba(248, 245, 239, 0.05),
+            rgba(38, 61, 85, 0.14)
         ),
         url("IMG_5220.JPEG");
 
@@ -62,7 +63,7 @@ body {
     justify-content: center;
     gap: 34px;
 
-    z-index: 2;
+    z-index: 3;
 }
 
 .nav a {
@@ -71,26 +72,39 @@ body {
 
     font-size: 12px;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: 700;
 
     text-shadow:
-        0 1px 3px rgba(20, 30, 40, 0.75),
-        0 0 10px rgba(20, 30, 40, 0.35);
+        0 2px 4px rgba(0, 0, 0, 0.😎,
+        0 0 10px rgba(0, 0, 0, 0.25);
 }
 
 .nav a:hover {
     opacity: 0.75;
 }
 
-/* TEKST MIDT PÅ BILDET */
+/* BOKS BAK HOVEDTEKSTEN */
 
 .hero-content {
     text-align: center;
     z-index: 2;
 
-    padding: 30px;
+    padding: 38px 52px;
 
     transform: translateY(-8%);
+
+    background: rgba(24, 43, 62, 0.42);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.18);
+
+    max-width: 950px;
+    width: calc(100% - 80px);
 }
 
 /* VI GIFTER OSS */
@@ -99,30 +113,30 @@ body {
     color: var(--gold);
 
     letter-spacing: 5px;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 700;
 
-    margin-bottom: 18px;
+    margin-bottom: 20px;
 
     text-shadow:
-        0 1px 3px rgba(20, 30, 40, 0.75),
-        0 0 10px rgba(20, 30, 40, 0.35);
+        0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* NAVNENE */
 
 .hero h1 {
-    color: var(--navy);
+    color: var(--navy-dark);
 
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(58px, 7vw, 110px);
     font-weight: 600;
     line-height: 0.95;
 
-    margin-bottom: 22px;
+    margin-bottom: 24px;
 
     text-shadow:
-        0 2px 12px rgba(248, 245, 239, 0.35);
+        0 2px 8px rgba(255, 255, 255, 0.65),
+        0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* DATO */
@@ -131,12 +145,11 @@ body {
     color: var(--gold);
 
     letter-spacing: 4px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 700;
 
     text-shadow:
-        0 1px 3px rgba(20, 30, 40, 0.75),
-        0 0 10px rgba(20, 30, 40, 0.35);
+        0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* HJERTE + LINJER */
@@ -147,28 +160,27 @@ body {
     align-items: center;
 
     gap: 14px;
-    margin: 18px 0;
+    margin: 20px 0;
 
     color: var(--gold);
 
-    font-weight: 600;
+    font-size: 22px;
+    font-weight: 700;
 
     text-shadow:
-        0 1px 3px rgba(20, 30, 40, 0.75),
-        0 0 10px rgba(20, 30, 40, 0.35);
+        0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .divider span {
     display: block;
 
-    width: 60px;
+    width: 70px;
     height: 2px;
 
     background: var(--gold);
-    opacity: 0.95;
 
     box-shadow:
-        0 1px 3px rgba(20, 30, 40, 0.45);
+        0 1px 3px rgba(0, 0, 0, 0.45);
 }
 
 /* TAGLINE */
@@ -177,21 +189,20 @@ body {
     color: var(--gold);
 
     letter-spacing: 4px;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
 
-    line-height: 1.5;
+    line-height: 1.6;
 
     text-shadow:
-        0 1px 3px rgba(20, 30, 40, 0.75),
-        0 0 10px rgba(20, 30, 40, 0.35);
+        0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* SCROLL NED */
 
 .scroll {
     position: absolute;
-    bottom: 30px;
+    bottom: 28px;
 
     display: flex;
     flex-direction: column;
@@ -203,15 +214,16 @@ body {
 
     font-size: 11px;
     letter-spacing: 3px;
-    font-weight: 600;
+    font-weight: 700;
+
+    z-index: 3;
 
     text-shadow:
-        0 1px 3px rgba(20, 30, 40, 0.75),
-        0 0 10px rgba(20, 30, 40, 0.35);
+        0 2px 4px rgba(0, 0, 0, 0.85);
 }
 
 .scroll span {
-    font-size: 25px;
+    font-size: 28px;
 }
 
 /* VELKOMMEN-SEKSJON */
@@ -238,7 +250,6 @@ body {
     font-family: 'Cormorant Garamond', serif;
 
     font-size: clamp(40px, 5vw, 64px);
-
     font-weight: 500;
 
     margin-bottom: 25px;
@@ -268,31 +279,48 @@ body {
 
     .hero-content {
         transform: translateY(-2%);
-        padding: 24px;
+
+        width: calc(100% - 32px);
+
+        padding: 30px 18px;
+
+        background: rgba(24, 43, 62, 0.40);
+
+        border-radius: 16px;
     }
 
     .hero h1 {
         font-size: clamp(58px, 17vw, 90px);
         font-weight: 600;
+
+        margin-bottom: 22px;
     }
 
     .eyebrow {
         font-size: 12px;
         letter-spacing: 4px;
-        font-weight: 600;
+        font-weight: 700;
     }
 
     .date {
         font-size: 12px;
         letter-spacing: 3px;
-        font-weight: 600;
+        font-weight: 700;
     }
 
     .tagline {
         font-size: 11px;
         letter-spacing: 3px;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 1.6;
+    }
+
+    .divider {
+        margin: 18px 0;
+    }
+
+    .divider span {
+        width: 48px;
     }
 
     .scroll {
