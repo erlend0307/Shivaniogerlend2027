@@ -30,8 +30,8 @@ body {
 
     background:
         linear-gradient(
-            rgba(38, 61, 85, 0.08),
-            rgba(38, 61, 85, 0.18)
+            rgba(248, 245, 239, 0.10),
+            rgba(38, 61, 85, 0.24)
         ),
         url("IMG_5220.JPEG");
 
@@ -206,3 +206,16 @@ body {
     }
 
 }
+.eyebrow,
+.date,
+.tagline {
+    font-weight: 500;
+    text-shadow: 0 1px 12px rgba(248, 245, 239, 0.65);
+}
+
+.hero h1 {
+    text-shadow: 0 2px 18px rgba(248, 245, 239, 0.35);
+}
+
+.nav a {
+    text-shadow: 0 1px 10px rgba(248, 245, 239, 0.7);
