@@ -2,12 +2,11 @@
 
 :root {
     --navy: #263d55;
-    --navy-dark: #1f3650;
     --slate: #6f8298;
     --soft-blue: #dce7ef;
     --ivory: #f8f5ef;
     --champagne: #d8c6aa;
-    --gold: #e0cf7a;
+    --gold: #c9ba54;
 }
 
 * {
@@ -26,7 +25,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero {
     min-height: 100vh;
@@ -49,7 +50,9 @@ body {
     overflow: hidden;
 }
 
-/* MENY */
+/* =========================
+   MENY
+========================= */
 
 .nav {
     position: absolute;
@@ -75,84 +78,95 @@ body {
     font-weight: 700;
 
     text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.😎,
-        0 0 10px rgba(0, 0, 0, 0.25);
+        0 1px 2px rgba(0, 0, 0, 0.9),
+        0 0 8px rgba(0, 0, 0, 0.45);
 }
 
 .nav a:hover {
     opacity: 0.75;
 }
 
-/* BOKS BAK HOVEDTEKSTEN */
+/* =========================
+   TEKSTBOKS MIDT PÅ BILDET
+========================= */
 
 .hero-content {
-    text-align: center;
+    position: relative;
     z-index: 2;
 
-    padding: 38px 52px;
+    text-align: center;
+
+    padding: 28px 38px;
 
     transform: translateY(-8%);
 
-    background: rgba(24, 43, 62, 0.42);
+    /*
+       Diskret bakgrunn BARE bak teksten.
+       Ikke full bredde.
+    */
+    background: rgba(248, 245, 239, 0.42);
 
-    border-radius: 18px;
+    border-radius: 14px;
 
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-
-    box-shadow:
-        0 10px 35px rgba(0, 0, 0, 0.18);
-
-    max-width: 950px;
-    width: calc(100% - 80px);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
 }
 
-/* VI GIFTER OSS */
+/* =========================
+   VI GIFTER OSS
+========================= */
 
 .eyebrow {
     color: var(--gold);
 
     letter-spacing: 5px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
 
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 
     text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.8);
+        0 1px 2px rgba(20, 30, 40, 0.85);
 }
 
-/* NAVNENE */
+/* =========================
+   SHIVANI & ERLEND
+========================= */
 
 .hero h1 {
-    color: var(--navy-dark);
+    color: var(--navy);
 
     font-family: 'Cormorant Garamond', serif;
+
     font-size: clamp(58px, 7vw, 110px);
+
     font-weight: 600;
     line-height: 0.95;
 
-    margin-bottom: 24px;
+    margin-bottom: 22px;
 
     text-shadow:
-        0 2px 8px rgba(255, 255, 255, 0.65),
-        0 1px 2px rgba(0, 0, 0, 0.2);
+        0 1px 4px rgba(248, 245, 239, 0.8);
 }
 
-/* DATO */
+/* =========================
+   DATO
+========================= */
 
 .date {
     color: var(--gold);
 
     letter-spacing: 4px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
 
     text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.8);
+        0 1px 2px rgba(20, 30, 40, 0.85);
 }
 
-/* HJERTE + LINJER */
+/* =========================
+   HJERTE + LINJER
+========================= */
 
 .divider {
     display: flex;
@@ -160,49 +174,50 @@ body {
     align-items: center;
 
     gap: 14px;
-    margin: 20px 0;
+    margin: 18px 0;
 
     color: var(--gold);
 
-    font-size: 22px;
     font-weight: 700;
-
-    text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .divider span {
     display: block;
 
-    width: 70px;
+    width: 60px;
     height: 2px;
 
     background: var(--gold);
-
-    box-shadow:
-        0 1px 3px rgba(0, 0, 0, 0.45);
 }
 
-/* TAGLINE */
+/* =========================
+   TAGLINE
+========================= */
 
 .tagline {
     color: var(--gold);
 
     letter-spacing: 4px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
 
     line-height: 1.6;
 
     text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.8);
+        0 1px 2px rgba(20, 30, 40, 0.85);
 }
 
-/* SCROLL NED */
+/* =========================
+   SCROLL NED
+========================= */
 
 .scroll {
     position: absolute;
-    bottom: 28px;
+
+    left: 50%;
+    bottom: 30px;
+
+    transform: translateX(-50%);
 
     display: flex;
     flex-direction: column;
@@ -219,14 +234,16 @@ body {
     z-index: 3;
 
     text-shadow:
-        0 2px 4px rgba(0, 0, 0, 0.85);
+        0 1px 3px rgba(0, 0, 0, 0.85);
 }
 
 .scroll span {
-    font-size: 28px;
+    font-size: 25px;
 }
 
-/* VELKOMMEN-SEKSJON */
+/* =========================
+   VELKOMMEN
+========================= */
 
 .welcome {
     padding: 110px 20px 130px;
@@ -250,6 +267,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
 
     font-size: clamp(40px, 5vw, 64px);
+
     font-weight: 500;
 
     margin-bottom: 25px;
@@ -265,7 +283,9 @@ body {
     font-size: 15px;
 }
 
-/* MOBIL */
+/* =========================
+   MOBIL
+========================= */
 
 @media (max-width: 800px) {
 
@@ -280,20 +300,18 @@ body {
     .hero-content {
         transform: translateY(-2%);
 
-        width: calc(100% - 32px);
+        width: calc(100% - 34px);
 
-        padding: 30px 18px;
+        padding: 25px 15px;
 
-        background: rgba(24, 43, 62, 0.40);
+        background: rgba(248, 245, 239, 0.40);
 
-        border-radius: 16px;
+        border-radius: 12px;
     }
 
     .hero h1 {
         font-size: clamp(58px, 17vw, 90px);
         font-weight: 600;
-
-        margin-bottom: 22px;
     }
 
     .eyebrow {
@@ -312,11 +330,8 @@ body {
         font-size: 11px;
         letter-spacing: 3px;
         font-weight: 700;
-        line-height: 1.6;
-    }
 
-    .divider {
-        margin: 18px 0;
+        line-height: 1.6;
     }
 
     .divider span {
@@ -324,6 +339,11 @@ body {
     }
 
     .scroll {
+        left: 50%;
+        bottom: 25px;
+
+        transform: translateX(-50%);
+
         font-size: 10px;
     }
 }
